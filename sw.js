@@ -3,7 +3,8 @@ var filesToCache = [
   '/',
   '/index.html',
   '/css/style.css',
-  '/js/main.js'
+  '/js/main.js',
+  '/image.svg'
 ];
 
 /* Start the service worker and cache all of the app's content */
@@ -18,8 +19,8 @@ self.addEventListener('install', function(e) {
 /* Serve cached content when offline */
 self.addEventListener('fetch', function(e) {
   e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
+    fetch(e.request).catch(function() {
+      return caches.match(e.request);
     })
   );
 });
