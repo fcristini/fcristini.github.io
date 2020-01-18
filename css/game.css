@@ -9,7 +9,7 @@ content td { background-color: lightgray; border: 2px; }
 .status { text-align: left; padding: 0 1em; }
 .smalltext { font-size: 0.8em; }
 .special { background-color: white; }
-.textleft { text-align: left; padding: 0 0 0 1em; }
+.textleft { text-align: left; padding: 0 0 0 1em; font-weight: bold; }
 footer table { table-layout: fixed; width: 100%; margin: 0; padding: 0; border: 0; border-collapse: separate; text-align: center; vertical-align: middle; color: white; }
 footer tr { height: 2em; margin: 0; padding: 0; border: 0; }
 footer td { border: 2px; }
