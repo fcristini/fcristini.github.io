@@ -3,6 +3,7 @@ var filesToCache = [
   '/',
   '/index.html',
   '/css/style.css',
+  '/css/game.css',
   '/js/main.js',
   '/image.svg'
 ];
